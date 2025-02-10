@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pH Scale</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ff8c00;
+            font-weight:bold;
+        }
+        h2{
+            background-color: red;
+        }
+        .scale {
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .box {
+            width: 450px;
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-weight: bold;
+            margin: 1px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>pH Scale</h2>
+    
+    <div class="scale">
+        <div class="box" style="background-color: #7904e6;">14.0 Very Alkaline</div>
+        <div class="box" style="background-color: #4b0082;">13.0</div>
+        <div class="box" style="background-color: #0000ff;">12.0</div>
+        <div class="box" style="background-color: #1e90ff;">11.0</div>
+        <div class="box" style="background-color: #00ced1;">10.0</div>
+        <div class="box" style="background-color: #20b2aa;">9.0</div>
+        <div class="box" style="background-color: #32cd32;">8.0</div>
+        <div class="box" style="background-color: #00ff00; color: black;">7.0 Neutral</div>
+        <div class="box" style="background-color: #adff2f; color: black;">6.0</div>
+        <div class="box" style="background-color: #ffff00; color: black;">5.0</div>
+        <div class="box" style="background-color: #ffd700;">4.0</div>
+        <div class="box" style="background-color: #ffa500;">3.0</div>
+        <div class="box" style="background-color: #ff8c00;">2.0</div>
+        <div class="box" style="background-color: #ff4500;">1.0</div>
+        <div class="box" style="background-color: #e22b2b;">0 Very Acidic</div>
+    </div>
+</body>
+</html>
