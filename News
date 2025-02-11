@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            word-wrap: break-word;
+        }
+      
+        tr td:first-child {
+            display: block;
+            width: 92%;
+        }
+       
+        @media (max-width: 600px) {
+            table, tbody, tr {
+                display: block;
+                width: 100%;
+            }
+            tr {
+                display: flex;
+                flex-direction: column;
+            }
+            td {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat quam sed massa pharetra, 
+                sit amet dapibus odio tristique. Nam vitae diam in lorem venenatis dictum. 
+                Donec nec lacus at turpis vehicula dapibus. Aenean sit amet libero.
+            </td>
+            <td>
+                Vivamus hendrerit magna sit amet odio lobortis, eu dapibus nunc ullamcorper. 
+                Proin feugiat metus vel erat feugiat, ut aliquet eros varius. Suspendisse potenti.
+                Integer non metus id arcu venenatis efficitur at vel nunc.
+            </td>
+            <td>
+                Phasellus eget justo at eros volutpat fermentum. Ut dictum magna non feugiat fringilla. 
+                Nulla facilisi. Sed non nisi lacus. Curabitur ut velit nec purus consectetur facilisis ut id libero.
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
